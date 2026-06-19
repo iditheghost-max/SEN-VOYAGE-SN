@@ -150,6 +150,12 @@ st.set_page_config(
 # Style personnalisé
 st.markdown("""
     <style>
+    .title-centered {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 20px 0;
+    }
     .stMetric {
         background-color: #f0f2f6;
         padding: 10px;
@@ -161,8 +167,8 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Titre principal
-st.title('💼 Plateforme de gestion et comptabilité')
+# Titre principal centré
+st.markdown('<h1 class="title-centered">💼 Plateforme de gestion et comptabilité</h1>', unsafe_allow_html=True)
 st.markdown('---')
 
 # Initialisation
