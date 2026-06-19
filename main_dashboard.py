@@ -112,7 +112,7 @@ def main():
                 sauvegarder_stock(df_stock, DATA_FILES['stock'])
                 enregistrer_log('ajout_achat', f"{quantite} x {produit} pour {montant} FCFA, fournisseur {fournisseur}")
                 st.success('Achat enregistré avec succès.')
-                st.experimental_rerun()
+                st.rerun()
 
     elif menu == 'Ventes':
         st.header('Gestion des ventes')
@@ -139,7 +139,7 @@ def main():
                 sauvegarder_stock(df_stock, DATA_FILES['stock'])
                 enregistrer_log('ajout_vente', f"{quantite} x {produit} pour {montant} FCFA, client {client}")
                 st.success('Vente enregistrée avec succès.')
-                st.experimental_rerun()
+                st.rerun()
 
     elif menu == 'Stock':
         st.header('Suivi du stock')
@@ -155,7 +155,7 @@ def main():
                 sauvegarder_stock(df_stock, DATA_FILES['stock'])
                 enregistrer_log('maj_stock', f"{type_mouvement} de {quantite} sur {produit}")
                 st.success('Stock mis à jour.')
-                st.experimental_rerun()
+                st.rerun()
 
     elif menu == 'Bilan':
         st.header('Bilan comptable')
